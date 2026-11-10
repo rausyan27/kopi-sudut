@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kopi Sudut – Kedai Kopi Lokal</title>
+  <!-- Menghubungkan file CSS lokal dari folder src -->
+  <link href="./src/output.css" rel="stylesheet" >
+  <style>
+    /* Penyesuaian scroll-padding untuk header sticky */
+    html {
+      scroll-padding-top: 5rem;
+    }
+  </style>
+</head>
+<body class="font-sans  antialiased text-[#2a1d17] leading-relaxed">
+
+  <!-- HEADER: logo kiri, menu kanan -->
+  <header class="sticky top-0 z-50 flex justify-between items-center px-8 py-4 bg-red-500 border-b-4 border-[#0f5257] shadow-sm">
+    <a href="#beranda" class="flex items-center gap-2.5 font-serif text-xl font-bold text-[#2a1d17] focus:outline-none focus:ring-2 focus:ring-[#f2b66d] focus:ring-offset-2 rounded">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+        <circle cx="17" cy="17" r="17" fill="#0f5257"/>
+        <path d="M9 14h13v6a5 5 0 0 1-5 5h-3a5 5 0 0 1-5-5zM22 15h2a2.5 2.5 0 0 1 0 5h-2" fill="none" stroke="#f2b66d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M13 8c-1 1.5 1 2.5 0 4M18 8c-1 1.5 1 2.5 0 4" fill="none" stroke="#f2b66d" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <span>Kopi Sudut</span>
+    </a>
+    <nav aria-label="Menu utama">
+      <ul class="flex gap-6">
+        <li><a href="#beranda" class="py-1 border-b-2 border-transparent hover:border-[#0f5257] transition-colors focus:outline-none focus:ring-2 focus:ring-[#f2b66d]">Beranda</a></li>
+        <li><a href="#menu" class="py-1 border-b-2 border-transparent hover:border-[#0f5257] transition-colors focus:outline-none focus:ring-2 focus:ring-[#f2b66d]">Menu</a></li>
+        <li><a href="#cerita" class="py-1 border-b-2 border-transparent hover:border-[#0f5257] transition-colors focus:outline-none focus:ring-2 focus:ring-[#f2b66d]">Cerita Kami</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BODY -->
+  <main>
+    <!-- Section 1: Hero -->
+    <section id="beranda" class="py-16 px-8 bg-white border-b border-[#d5dfd7]">
+      <div class="max-w-[960px] mx-auto">
+        <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl leading-tight max-w-[22ch] [text-wrap:balance] mb-4 font-bold">
+          Kopi dari petani lokal, diseduh pelan-pelan.
+        </h1>
+        <p class="max-w-[55ch] mb-6 text-base md:text-lg">
+          Kopi Sudut adalah kedai kecil di pojok jalan. Biji kopinya kami beli langsung dari kebun di pegunungan Jawa Barat, lalu kami sangrai sendiri tiap minggu.
+        </p>
+        <a href="#menu" class="inline-block px-6 py-3 bg-[#0f5257] text-white font-semibold rounded-md hover:bg-[#2a1d17] transition-colors focus:outline-none focus:ring-2 focus:ring-[#f2b66d] focus:ring-offset-2">
+          Lihat menu
+        </a>
+      </div>
+    </section>
+
+    <!-- Section 2: Menu -->
+    <section id="menu" class="py-16 px-8">
+      <div class="max-w-[960px] mx-auto">
+        <h2 class="font-serif text-2xl md:text-3xl font-bold mb-2">Menu andalan</h2>
+        <p class="mb-8">Tiga minuman yang paling sering dipesan pelanggan.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <article class="flex flex-col p-6 bg-white border-t-4 border-[#f2b66d] shadow-sm rounded-b-md">
+            <h3 class="font-bold text-lg mb-2">Kopi susu gula aren</h3>
+            <p class="flex-1 mb-4">Espresso, susu segar, dan gula aren cair. Manisnya pas, tidak berat.</p>
+            <span class="font-bold text-[#0f5257]">Rp 22.000</span>
+          </article>
+          <!-- Card 2 -->
+          <article class="flex flex-col p-6 bg-white border-t-4 border-[#f2b66d] shadow-sm rounded-b-md">
+            <h3 class="font-bold text-lg mb-2">V60 single origin</h3>
+            <p class="flex-1 mb-4">Seduh manual dengan biji pilihan minggu ini. Rasa buah dan asamnya terasa jelas.</p>
+            <span class="font-bold text-[#0f5257]">Rp 28.000</span>
+          </article>
+          <!-- Card 3 -->
+          <article class="flex flex-col p-6 bg-white border-t-4 border-[#f2b66d] shadow-sm rounded-b-md">
+            <h3 class="font-bold text-lg mb-2">Teh tarik rempah</h3>
+            <p class="flex-1 mb-4">Pilihan untuk yang tidak minum kopi: teh hitam, jahe, dan kayu manis.</p>
+            <span class="font-bold text-[#0f5257]">Rp 18.000</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Cerita Kami -->
+    <section id="cerita" class="py-16 px-8 bg-[#0f5257] text-white">
+      <div class="max-w-[960px] mx-auto">
+        <h2 class="font-serif text-2xl md:text-3xl font-bold mb-4">Cerita kami</h2>
+        <p class="max-w-[65ch] mt-3">
+          Kedai ini dibuka tahun 2022 oleh dua teman kuliah yang bosan dengan kopi yang rasanya itu-itu saja. Kami mulai dari satu mesin espresso bekas dan meja kayu di teras rumah.
+        </p>
+        <p class="max-w-[65ch] mt-3">
+          Sekarang kami bekerja sama dengan tiga kelompok tani. Harga beli kami tetapkan di awal musim, supaya petani tahu penghasilan mereka sebelum panen.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="flex flex-col md:flex-row justify-between items-center gap-8 p-8 bg-[#2a1d17] text-[#efe6df]">
+    <div class="flex-1 flex justify-center md:justify-start">
+      <a href="#beranda" class="flex items-center gap-2.5 font-serif text-xl font-bold text-white">
+        <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+          <circle cx="17" cy="17" r="17" fill="#f2b66d"/>
+          <path d="M9 14h13v6a5 5 0 0 1-5 5h-3a5 5 0 0 1-5-5zM22 15h2a2.5 2.5 0 0 1 0 5h-2" fill="none" stroke="#2a1d17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13 8c-1 1.5 1 2.5 0 4M18 8c-1 1.5 1 2.5 0 4" fill="none" stroke="#2a1d17" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <span>Kopi Sudut</span>
+      </a>
+    </div>
+
+    <div class="flex-1 text-center">
+      <p>Kedai kopi kecil yang menyangrai dan menyeduh biji dari petani lokal.</p>
+    </div>
+
+    <div class="flex-1 text-center md:text-right">
+      <address class="not-italic">
+        Jl. Contoh No. 12<br>
+        halo@kopisudut.example<br>
+        Setiap hari, 08.00–21.00
+      </address>
+    </div>
+  </footer>
+
+</body>
+</html>
